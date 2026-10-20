@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["Robotarm"]
+
+[project]
+name = "JoyIT_Robotarm_RaspberryPi"
+version = "1.0.0"
+authors = [
+  { name="Joy-IT", email="service@joy-it.net" },
+]
+description = "Library to control Robot02 from Joy-IT with the Raspberry Pi and RB-Moto3."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license-files = ["LICENSE"]
+dependencies = ["smbus2", "gpiozero", "adafruit-circuitpython-motor", "JoyIT_MotoPi", "JoyIT_WLGamepad", "lgpio"]
+
+[project.urls]
+Homepage = "https://github.com/joy-it/JoyIT_Robotarm_RaspberryPi"
+Issues = "https://github.com/joy-it/JoyIT_Robotarm_RaspberryPi/issues"
