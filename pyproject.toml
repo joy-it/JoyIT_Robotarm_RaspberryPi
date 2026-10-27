@@ -19,7 +19,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 license-files = ["LICENSE"]
-dependencies = ["smbus2", "gpiozero", "adafruit-circuitpython-motor", "JoyIT_MotoPi", "JoyIT_WLGamepad", "lgpio"]
+dependencies = ["smbus2", "gpiozero", "JoyIT_MotoPi", "JoyIT_WLGamepad", "lgpio"]
 
 [project.urls]
 Homepage = "https://github.com/joy-it/JoyIT_Robotarm_RaspberryPi"
